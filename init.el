@@ -151,3 +151,4 @@
 
 (add-hook 'after-save-hook 'highlight-changes-remove-after-save)
 (set-face-background 'default "black")
+(delete '("\\.html?\\'" flymake-xml-init) flymake-allowed-file-name-masks)
